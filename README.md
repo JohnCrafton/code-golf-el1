@@ -1,3 +1,10 @@
+# Notes
+## 2023-04-14 @ 21.10h EST
+I've put together a quick CLI version of "parse the JSON, get available trucks, show user" in the first hour of monkeying with the thing.  I've stubbed out the UX for an API-backed version of the same.  I'll commit the UX with a direct "pull and parse" like the CLI first, then - if I can carve out the time - add some CI bits for a TS/node service (deployable to AWS Lambda) that could do the parsing/delivery on that platform instead.
+
+
+## ORIGINAL README.md follows
+---
 # Engineering Challenge
 
 We strive to be a practical and pragmatic team. That extends to the way that we work with you to understand if this team is a great fit for you. We want you to come away with a great understanding of the kind of things that we actually do day to day and what it is like to work in our teams.
