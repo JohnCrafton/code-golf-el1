@@ -78,5 +78,7 @@ echo " "
 echo " "
 echo "${bold}${lightblue}Here are your options today${normal}:"
 
+cat ./food_truck.dat
+
 # pretty print the current trucks
 jq '.' current_trucks_list.json

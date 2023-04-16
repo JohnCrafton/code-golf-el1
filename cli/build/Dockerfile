@@ -1,13 +1,20 @@
-# Dockerfile attribution section with author and license information
+FROM debian:bullseye
 
+ARG USER=foodtrucks
+ENV USER=${USER}
 
-FROM ubuntu:18.04
+COPY ./apt-list.dat /tmp
 
-RUN apt-get update && apt-get install -y \
-    bash git vim \
-    && rm -rf /var/lib/apt/lists/*
+RUN	apt update; \
+    xargs apt install -y -qq < /tmp/apt-list.dat; \
+    useradd -m ${USER};
 
-RUN useradd -m -u 1000 -U -s /bin/bash user
-
-USER 1000
 WORKDIR /home/user
+
+COPY ./src ./ft
+RUN chown -R ${USER}:${USER} ./ft
+
+USER ${USER}
+WORKDIR /home/user/ft
+
+CMD ["/bin/bash", "-c", "tail -f /dev/null"]
