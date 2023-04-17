@@ -1,3 +1,17 @@
+# Notes
+## 2023-04-14 @ 21.10h EST
+I've put together a quick CLI version of "parse the JSON, get available trucks, show user" in the first hour of monkeying with the thing.  I've stubbed out the UX for an API-backed version of the same.  I'll commit the UX with a direct "pull and parse" like the CLI first, then - if I can carve out the time - add some CI bits for a TS/node service (deployable to AWS Lambda) that could do the parsing/delivery on that platform instead.
+
+## 2023-04-17 @ 09.00h EST
+I've added the backbone of a TS/node lambda API for filtering the trucks, along with a "card" for each truck in a proto-UX consuming the API.  With a week of working days, this could be a "food truck app" that you could use on desktop or mobile without a lot of effort (and likely whitebox for any area publishing similar data).
+
+## 2023-04-17 @ 11.00h EST
+You can open the `./ux/crafted/index.html` in a local browser and see the proto-UX for the service (which is alive - as of the timestamp above - on my homelab).  I'll let it run through Friday, 2023-04-21.  Send me a message if you'd like me to restart it for some reason.
+
+You can review the endpoints in the `./ux/service/app/app.js` file and should be able to hit any of them in a browser/CURL session as well.
+
+## ORIGINAL README.md follows
+---
 # Engineering Challenge
 
 We strive to be a practical and pragmatic team. That extends to the way that we work with you to understand if this team is a great fit for you. We want you to come away with a great understanding of the kind of things that we actually do day to day and what it is like to work in our teams.

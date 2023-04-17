@@ -1,0 +1,105 @@
+html {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'PT Mono', monospace;
+	font-size: 14pt;
+	color: #181818;
+	background-color: #dddddd;
+	margin: auto;
+	width: 95%;
+}
+
+svg {
+	width: 100%;
+	overflow: auto;
+}
+
+	#food-truck-icon {
+		width: 400px;
+		margin: auto;
+	}
+
+svg text {
+	line-height: 100%;
+	white-space: pre;
+	font-family: monospace;
+	font-size: 8px;
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+dl#todays-trucks {
+	list-style-type: none;
+	padding: 0px;
+}
+
+dl#todays-trucks dt {
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-family: 'Bungee', serif;
+	color: #646464;
+	text-align: center;
+}
+
+dl#todays-trucks dd {
+	margin: 0px;
+	padding: 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+dl#todays-trucks dd ul {
+	list-style-type: none;
+	padding: 10px;
+	grid-column: auto;
+	width: 500px;
+	border: 1px solid #ffcc00;
+	border-radius: 5px;
+}
+
+header h1 {
+	background-color: #646464;
+}
+
+header h1 {
+	width: 100%;
+	margin: auto;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	font-size: 3em;
+	color: #ffcc00;
+	display: flex;
+	justify-content: space-around;
+}
+
+main {
+	padding: 1em 0px 1em 0px;
+	gap: 1.5em;
+	border-top: 1px solid #646464;
+	border-bottom: 1px solid #646464;
+}
+
+@media only screen and (max-width: 425px) {
+	body {
+		font-size: 12pt;
+	}
+	main {
+		display: unset;
+	}
+	header h1 {
+		font-size: 1.75em;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	header h1 {
+		font-size: 1.25em;
+	}
+}
