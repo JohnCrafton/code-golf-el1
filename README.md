@@ -2,6 +2,8 @@
 ## 2023-04-14 @ 21.10h EST
 I've put together a quick CLI version of "parse the JSON, get available trucks, show user" in the first hour of monkeying with the thing.  I've stubbed out the UX for an API-backed version of the same.  I'll commit the UX with a direct "pull and parse" like the CLI first, then - if I can carve out the time - add some CI bits for a TS/node service (deployable to AWS Lambda) that could do the parsing/delivery on that platform instead.
 
+## 2023-04-17 @ 09.00h EST
+I've added the backbone of a TS/node lambda API for filtering the trucks, along with a "card" for each truck in a proto-UX consuming the API.  With a week of working days, this could be a "food truck app" that you could use on desktop or mobile without a lot of effort (and likely whitebox for any area publishing similar data).
 
 ## ORIGINAL README.md follows
 ---

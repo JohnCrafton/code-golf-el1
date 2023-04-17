@@ -1,0 +1,15 @@
+{
+    "name": "trucks-api",
+    "version": "1.0.0",
+    "description": "Node service for SF food trucks.",
+    "author": "Crafton <john.crafton@gmail.com>",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "*",
+        "node-fetch": "*",
+        "cors": "*"
+    }
+}
